@@ -1,0 +1,17 @@
+-------- Site desenvolvido para apresentação do 1º Projeto Integrador --------
+
+
+
+___________________________ CONHECIMENTOS ___________________________
+CURSO: Tec. em Informática (Desenvolvimento Web) - SENAC MADUREIRA-RJ
+TEMPO NO CURSO: 7 meses
+
+_____________________________________________________________________
+- TEMA: Loja de eletrônicos
+- DESENVOLVIDO EM: 15/03/2023 a 24/03/2023.
+
+AUTORES:
+https://github.com/GabrielModesto-O
+https://github.com/Peterson-santos
+https://github.com/Lipee221
+https://github.com/EoPontax
