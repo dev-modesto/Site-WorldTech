@@ -41,8 +41,8 @@ $totalPaginas = ceil($totalProdutos / $maxProdutosPorPagina);
 ?>
 
 
-<section class="principal-produto">
-  <div class="container-card-pdutos">
+<section class="produto__principal">
+  <div class="container__card__produtos">
     <?php while($exibe = mysqli_fetch_array($seleciona)) { ?>
 
           <div class="carrossel">
@@ -71,7 +71,7 @@ $totalPaginas = ceil($totalProdutos / $maxProdutosPorPagina);
                         <img src="fotos/banner1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="fotos/banner4.jpg" class="d-block w-100" alt="...">
+                        <img src="fotos/banner5.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
 
@@ -91,8 +91,8 @@ $totalPaginas = ceil($totalProdutos / $maxProdutosPorPagina);
             </div>
           </div>
 
-      <div class="container-produto">
-          <div class="container-produto-titulo">
+      <div class="produtos__container">
+          <div class="produtos__container--titulo">
             <h4>Encontre o produto ideal</h4>
           </div>
 
@@ -118,16 +118,16 @@ $totalPaginas = ceil($totalProdutos / $maxProdutosPorPagina);
 
               <div class="input-group filtro-categoria">
                 <label for="categoria" class="input-group-text">Categoria:</label>
-                  <select id="categoria" name="categoria" class="form-select">
-                    <option value="Todos">Todos</option>
-                    <option value="Notebook">Notebooks</option>
-                    <option value="Tablet">Tablets</option>
-                    <option value="Smartphone">Smartphones</option>
-                    <option value="Fone de ouvido">Fones de ouvido</option>
-                    <option value="Relógio">Relógios</option>
-                    <option value="Promoção">Promoção</option>
-                    <button value="Relógio">R</button>
-                  </select>
+                <select id="categoria" name="categoria" class="form-select">
+                  <option value="Todos">Todos</option>
+                  <option value="Notebook">Notebooks</option>
+                  <option value="Tablet">Tablets</option>
+                  <option value="Smartphone">Smartphones</option>
+                  <option value="Fone de ouvido">Fones de ouvido</option>
+                  <option value="Relógio">Relógios</option>
+                  <option value="Promoção">Promoção</option>
+                  <button value="Relógio">R</button>
+                </select>
                 <button type="submit" class="btn btn-primary">Filtrar</button>
               </div>
 
@@ -145,24 +145,21 @@ $totalPaginas = ceil($totalProdutos / $maxProdutosPorPagina);
 
             <!-- card -->
             <a href="../produto/produto_espec.php?id=<?php echo $id?>">
-              <div class="cards-produtos">
-                <div class="cards-produtos-foto">
+              <div class="produtos__cards prod__cards">
+                <div class="produtos__cards--foto prod__cards--foto">
                   <div><img src=" <?php echo $exibe ['foto']?>"></div>
                 </div>
 
-                <div class="cards-produtos-info">
-                  <div class="cards-produtos-titulo">
+                <div class="produtos__cards--info prod__cards--info">
+                  <div class="produtos__cards--titulo prod__cards--titulo">
                     <?php echo $exibe['nome']; ?>
                   </div>
 
-                  <div class="cards-produtos-preco">
+                  <div class="produtos__cards--preco prod__cards--preco">
                     R$ <?php echo number_format($exibe['preco'], 2, ",", "."); ?>
                   </div>
 
-                  </div>
-                  
-                  <div>
-                  <div class="produto-btn-comprar">
+                  <div class="produto-btn-comprar prod-btn-comprar">
                     <button type="submit" class="submit">Comprar</button>
                   </div>
                 </div>

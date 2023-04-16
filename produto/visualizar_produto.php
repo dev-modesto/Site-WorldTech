@@ -21,9 +21,9 @@
     
 ?>
 
-<section class="principal-produto-visualizar">
+<section class="produto__principal__visualizar">
 
-  <div class="container-produto-visualizar">
+  <div class="produto__container__visualizar">
 
     <div>
       <a href="../produto/produto_espec.php?id=<?php echo $id?>">

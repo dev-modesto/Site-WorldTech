@@ -20,13 +20,13 @@ if(isset($_GET['id'])){
   $mensalidades = $parcelas12x/12;
   
   ?>
-<section class="principal-produto-visualizar">
+<section class="produto__principal__visualizar">
 
-  <div class="container-produto-visualizar">
+  <div class="produto__container__visualizar">
     <div class="caminho-produto">
       <h6>Produtos/<?php echo " $categoria<span>/</span> $nome <span>/código:26</span>$cod"?></h6>
     </div>
-    <div class="container-produto-visualizar-top">
+    <div class="produto__container__visualizar--top">
 
         <div class="produto-visu-imagem">
             <div class="imagem-visu-imagem">

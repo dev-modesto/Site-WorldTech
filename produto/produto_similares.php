@@ -26,19 +26,19 @@ $seleciona = mysqli_query($conexaoTech, $sql);
                 
                 <div class="col-md-4 produtos-similares-carrossel">
 
-                  <div class="cards-produtos">
+                  <div class="produtos__cards">
 
-                    <div class="cards-produtos-foto">
+                    <div class="produtos__cards--foto">
                       <img src="' . $exibe['foto'] . '" class="img-fluid rounded-start" alt="...">
                     </div>
                       
-                    <div class="cards-produtos-info">
-                      <div class="cards-produtos-titulo">
+                    <div class="produtos__cards--info">
+                      <div class="produtos__cards--titulo">
                         ' . $exibe['nome'] . '
                       </div>
                     </div>
 
-                    <div class="cards-produtos-preco">
+                    <div class="produtos__cards--preco">
                       R$ ' . number_format($exibe['preco'], 2, ',', '.') .'
                     </div>
                     
