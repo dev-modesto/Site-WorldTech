@@ -2,16 +2,16 @@
     include "../adm/base.php";
 ?>
 
-    <section class="principal-cadastro" >
+    <section class="cadastro__principal" >
         
-        <div class="container-cadastro">
+        <div class="cadastro__container">
             
         
-            <div class="titulo-cadastro">
+            <div class="cadastro__titulo">
                 <h2>Criar conta</h2>
             </div>
             
-            <div class="dados-cadastro">
+            <div class="cadastro__dados">
 
                 <form id="grid-container" name="cadastro" method="post" action="usuario_cadastro.php">
                     
@@ -45,7 +45,7 @@
 
 
     
-            <div class="login-cadastro">
+            <div class="login__cadastro">
                 Você já tem uma conta? <a href="../adm/login.php">Fazer login.</a>
             </div>
         </div>

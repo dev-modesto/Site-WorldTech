@@ -30,6 +30,9 @@
     
 
 
+    
+
+
 </head>
 <body>
 
@@ -37,10 +40,10 @@
     <header class="cabecalho fixed-top">
         <div class="navbar">
             
-            <div class="logo">
+            <div class="navbar__logo">
                 <a href="#"><img src="../usuario/img/logo 11.png" alt=""></a>
             </div>
-            <div class="menu">
+            <div class="navbar__menu">
                 <ul class="ativar">
                     <li><a href="../adm/index.php">Home</a></li>
                     <li><a href="../produto/produtos.php">Produtos</a></li>
@@ -95,9 +98,9 @@
             <div class="perfil">
                 
                 
-                <div class="perfil-container">
+                <div class="perfil__container">
 
-                    <div class="loginAcessar">
+                    <div class="perfil__loginAcessar">
                         
                         <?php
 
@@ -132,7 +135,7 @@
                             
                         </div>
 
-                        <div class="acesso">
+                        <div class="perfil__acesso">
                             <ul>
                                 <li>
                                     <i class='bx bxs-user'></i>
@@ -147,7 +150,7 @@
                            
                         </div>
                         
-                        <div class="carrinho">
+                        <div class="perfil__carrinho">
                             <i class='bx bxs-cart-alt'></i>
                         </div>
                     </div>

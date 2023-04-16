@@ -1,0 +1,21 @@
+.principal_usuario_listar,
+.principal_usuario_alterar{
+    margin-top: 100px;
+}
+.tbl_listar th{
+    background-color: #333333;
+    color: white;
+    font-weight: 400;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+table td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}

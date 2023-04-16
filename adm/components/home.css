@@ -1,0 +1,217 @@
+/* carrossel */
+.carousel{
+    height: auto;
+    margin-top: 50px;
+}
+.carousel-inner{
+    max-height: 60vh;
+    border-radius: 0 0 30px 30px;
+    border-radius: 30px;
+}
+.carousel-control-prev span, .carousel-control-next span{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-carousel i{
+    font-size: 42px;
+    color: white;
+}
+.carousel-indicators .active {
+    opacity: 1;
+}
+.carousel-indicators{
+    opacity: .5;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+/* ---------------------------------------------------- */
+
+
+.principal-home{
+    height: auto;
+}
+.container-anuncio{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.card-anuncio-1,
+.card-anuncio-2{
+    width: 48%;
+    background-color: var(--bg-color-secondary);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.titulo-destaque{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* card promocao destaque */
+.cards-promocao{
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    margin-top: 15px;
+    transition: all .2s;
+    background-color: transparent;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    transition: all .2s;
+}
+    .cards-promocao-foto{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-promocao-foto div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+    }
+    .cards-promocao-foto div img{
+        width: 70%;
+    }
+    .cards-promocao-info{
+        width:50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cards-promocao-titulo{
+        text-align: center;
+        font-weight: 600;
+        width: 100%;
+        height: auto;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+    .cards-promocao-valor{
+        width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .btn-comprar-promocao button{
+        width: 150px;
+    }
+    .cards-promocao:hover{
+        background-color: transparent;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        transform: scale(1.01);
+        transition: all .2s;
+    }
+    .promocao{
+        margin-bottom: 100px;
+    }
+
+
+@media (max-width:1000px){
+    .cards-promocao-titulo{
+        font-size: 1.3em;
+    }
+        .cards-promocao-valor{
+            font-size: 1.0em;
+        }
+            .cards-promocao{
+                height: 250px;
+            }
+        .container-anuncio{
+            height: 640px;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-anuncio-1,
+        .card-anuncio-2{
+            width: 70%;
+            height: 300px;
+            background-color: var(--bg-color-secondary);
+            border-radius: 30px;
+            padding: 10px;
+        }
+    }
+
+    @media (max-width:720px){
+        .container-anuncio{
+            height: 540px;
+            display: flex;
+        }
+        .card-anuncio-1,
+        .card-anuncio-2{
+            width: 70%;
+            min-height: 250px;
+            height: auto;
+        }
+    }
+    @media (max-width:590px){
+    .container-anuncio{
+        height: 440px;
+    }
+    .card-anuncio-1,
+    .card-anuncio-2{
+        width: 70%;
+        min-height: 200px;
+        height: auto;
+    }
+}
+
+@media(max-width:500px){
+    .carousel-control-prev span, .carousel-control-next span{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 20%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-carousel i{
+        font-size: 22px;
+        color: white;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-comprar-promocao button{
+        width: 100px;
+        font-size: 0.8em;
+    }
+}
+
+

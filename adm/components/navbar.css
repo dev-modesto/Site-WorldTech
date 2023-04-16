@@ -1,0 +1,308 @@
+:root{
+    --font-size-1: 16px;
+    --font-size-2: 1.2em;
+    --font-size-3: 1.3em;
+    --font-size-4: 1.4em;
+    --font-size-5: 1.5em;
+    --font-size-6: .9em;
+    --font-size-7: .8em;
+    --font-size-8: .6em;
+    --font-size-9: .5em;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color-primary);    
+    transition: .3s;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 20%);
+}
+.navbar{
+    background-color: var(--bg-color-primary);  
+    width: 1200px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.navbar__logo{
+    font-size: 32px;
+    font-weight: 300;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.navbar__logo span{
+    font-weight: 800;
+    color: tomato;
+}
+.navbar__logo a{
+    display: flex;
+    align-items: center;
+}
+.navbar__logo img{
+    width: 50px;
+}
+.navbar__menu{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu-ico{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    display: none;
+    margin-right: 15px;
+}
+.navbar__menu ul{
+    list-style: none;
+    display: flex;
+    height: 80%;
+}
+.navbar__menu ul li{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5em;
+    position: relative;
+}
+.navbar__menu ul a{
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #333333;
+}
+.navbar__menu ul a::after{
+    content: ' ';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: -2px;
+    left: 0;
+    transition: ease .40s;
+}
+.navbar__menu ul a:hover::after{
+    width: 100%;
+}
+
+
+.perfil__container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+}
+.perfil{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.perfil__acesso i{
+    font-size: 40px;
+}
+.perfil__acesso ul li{
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfil__acesso ul li i{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.btn_ico{
+    font-size: 1.5em;
+    transition: all 0.2s;
+    align-items: center;
+    cursor: pointer;
+}
+.btn_ico:hover{
+    font-size: 1.7em;
+    transition: all 0.2s;
+}
+.perfil__loginAcessar{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+.perfil__loginAcessar a{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.perfil__carrinho{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 8px;
+}
+.perfil__carrinho i{
+    font-size: 1.5em;
+}
+.perfil__acesso ul li{
+    display: inline-block;
+    position: relative;
+}
+.perfil__acesso ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #333333;
+    border-left: 3px solid salmon;
+}
+.perfil__acesso ul li ul.dropdown li{
+    font-size: 1.5em;
+    width: 150px;
+}
+.perfil__acesso ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    right: 112px;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.login-2{
+    display: none;
+}
+.dropdown a:hover{
+    color:  salmon;
+    background-color: rgba(30, 30, 30, 50)
+}
+.dropUser{
+    display: none;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: left;
+    background-color: #333333;
+    border-left: 3px solid salmon;
+    font-weight: 200;
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    right: 150px;
+    z-index: 1;
+}
+    .dropUser ul{
+        position: relative;
+    }
+        .perfilNome,
+        .perfilCPF,
+        .perfilEmail{
+            color: whitesmoke;
+        }
+            .perfilNome{
+                font-weight: 600
+            }
+
+            .perfilConta a{
+                margin: 0;
+                color: white;
+                text-decoration: underline;
+            }
+            .perfilConta a:hover{
+                color: #bbbbbb;
+                font-weight: 400;
+            }
+
+
+@media (max-width:800px){
+    .login-2{
+        display: block;
+    }
+    #menu-ico{
+        display: block;
+    }
+    .perfil{
+        display: none;
+    }
+    .navbar__perfil{
+        display: none;
+    }
+    .navbar__menu ul{
+        width: 100%;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        bottom: -100%;
+        nav-up: -100%;
+        min-height: 600px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all .3s ease;
+        background-color: #333333;
+    }
+    .navbar__menu ul.open{
+        right: 0;
+    }
+    .navbar__menu li{
+        width: 100%;
+    }
+    .navbar__menu ul li{
+        padding: 15px 0;
+        margin: 0;
+        border-left: 4px solid white;   
+        margin: 1px solid red   ;
+        margin: 10px 0;
+    }
+    .navbar__menu ul li a{
+        color: #bbbbbb;
+        font-weight: 200;
+        display: block;
+        width: 100%;
+    }
+    .navbar__menu a:hover{
+        color: white;
+        font-weight: 400;
+    }
+    .navbar__menu ul a::after{
+        background-color: white;
+    }
+}
+
+@media (max-width:390px){
+    .navbar__menu ul li{
+        border-left: 2px solid white;   
+        font-size: var(--font-size-1);
+        }
+    }
+@media (max-width:360px){
+    .navbar__menu ul li{
+        border-left: 2px solid white;   
+        font-size: var(--font-size-3);
+    }
+}
+
+@media (max-width:390px){
+    .menu ul li{
+        border-left: 2px solid white;   
+        font-size: var(--font-size-1);
+    }
+}
+@media (max-width:360px){
+    .menu ul li{
+        border-left: 2px solid white;   
+        font-size: var(--font-size-3);
+    }
+}
